@@ -19,7 +19,7 @@ cargo -r --release
 
 ### How does the speed compare with `md5sum`?
 `md5sum` is a utility shipped with most Linux distributions (part of
-coreutils), and it is very fast. I will here compare the execution speed:
+coreutils), and it is very fast. I will here compare the execution speed using `sratoolkit.2.9.2-ubuntu64.tar.gz` (size is 80 mb).
 
 
 ```bash
@@ -44,6 +44,9 @@ Loading sratoolkit.2.9.2-ubuntu64.tar.gz...
 ./target/release/md5inrust sratoolkit.2.9.2-ubuntu64.tar.gz  0.20s user 0.01s system 99% cpu 0.205 total
 
 ```
+
+#### Conclusions
+Coreutil's `md5sum` is 0.06 seconds faster. Still a good spot for Rust, considering I did not try to optimize the code.
 
 ### Contact
 - OF, <p.oscar.franzen@gmail.com>
