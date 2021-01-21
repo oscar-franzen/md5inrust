@@ -1,9 +1,9 @@
 // OF; <p.oscar.franzen@gmail.com>
 // https://github.com/oscar-franzen/md5inrust
 
-// A vanilla md5 implementation I used as a wau to learn the Rust
+// A vanilla md5 implementation I used as a way to learn the Rust
 // programming language. See README.md for more info on how to
-// ccompile.
+// compile.
 
 use std::env;
 use std::process;
